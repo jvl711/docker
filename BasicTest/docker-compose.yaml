@@ -1,0 +1,10 @@
+version: '3.2'
+
+services:
+  BasicTest:
+    image: alpine:latest
+    entrypoint: tail -f /dev/null
+    environment:
+      - NMS=TEST2
+    deploy:
+      replicas: 1
